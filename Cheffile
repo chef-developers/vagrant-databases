@@ -7,6 +7,9 @@ cookbook 'apt'
 cookbook 'postgresql',
   :git => 'git://github.com/scottmuc/chef-postgresql.git'
 
+cookbook 'phppgadmin',
+  :git => 'git://github.com/chef-developers/chef-phppgadmin.git'
+
 # cookbook 'apache2', '>= 1.0.0'
 
 # cookbook 'rvm',

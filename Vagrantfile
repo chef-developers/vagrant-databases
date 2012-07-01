@@ -13,14 +13,16 @@ Vagrant::Config.run do |config|
 
   # Forward a port from the guest to the host, which allows for outside
   # computers to access the VM, whereas host only networking does not.
-  config.vm.forward_port 5432, 5432
+
+  config.vm.forward_port 5432, 5432 # postgresql
+  config.vm.forward_port 4000, 4000 # phppgadmin
 
 
-   config.vm.provision :chef_solo do |chef|
-     chef.cookbooks_path = "cookbooks"
-     chef.roles_path = "roles"
-     chef.add_role "postgresql"
-   end
+  config.vm.provision :chef_solo do |chef|
+    chef.cookbooks_path = "cookbooks"
+    chef.roles_path = "roles"
+    chef.add_role "postgresql"
+  end
 
 
 end

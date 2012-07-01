@@ -1,7 +1,7 @@
 name "pgsql"
 description "Creates postgresql db"
 
-run_list "apt", "postgresql", "postgresql::server"
+run_list "apt", "postgresql", "postgresql::server", "phppgadmin"
 
 # postgres admin user = 'postgres'
 
