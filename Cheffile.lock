@@ -5,13 +5,6 @@ SITE
     openssl (1.0.0)
 
 GIT
-  remote: git://github.com/chef-developers/chef-phppgadmin.git
-  ref: master
-  sha: 33b1c69ba73ed080b4d9fdfe783bf15d12f03b0c
-  specs:
-    phppgadmin (0.1.0)
-
-GIT
   remote: git://github.com/scottmuc/chef-postgresql.git
   ref: master
   sha: d37fd3b53ed7aa3b0609051941bc33b9b9c674d5
@@ -19,6 +12,13 @@ GIT
     postgresql (0.99.6)
       apt (>= 0.0.0)
       openssl (>= 0.0.0)
+
+GIT
+  remote: https://github.com/chef-developers/chef-phppgadmin.git
+  ref: master
+  sha: 33b1c69ba73ed080b4d9fdfe783bf15d12f03b0c
+  specs:
+    phppgadmin (0.1.0)
 
 DEPENDENCIES
   apt (>= 0)
