@@ -10,6 +10,7 @@ cookbook 'postgresql',
 cookbook 'phppgadmin',
   :git => 'https://github.com/chef-developers/chef-phppgadmin.git'
 
+cookbook 'mongodb'
 # cookbook 'apache2', '>= 1.0.0'
 
 # cookbook 'rvm',

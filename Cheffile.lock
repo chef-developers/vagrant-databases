@@ -2,6 +2,8 @@ SITE
   remote: http://community.opscode.com/api/v1
   specs:
     apt (1.4.2)
+    mongodb (0.11.0)
+      apt (>= 0.0.0)
     openssl (1.0.0)
 
 GIT
@@ -22,6 +24,7 @@ GIT
 
 DEPENDENCIES
   apt (>= 0)
+  mongodb (>= 0)
   phppgadmin (>= 0)
   postgresql (>= 0)
 

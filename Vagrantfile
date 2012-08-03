@@ -16,12 +16,14 @@ Vagrant::Config.run do |config|
 
   config.vm.forward_port 5432, 5432 # postgresql
   config.vm.forward_port 4000, 4000 # phppgadmin
+  config.vm.forward_port 27017, 27017 # mongodb
 
 
   config.vm.provision :chef_solo do |chef|
     chef.cookbooks_path = "cookbooks"
     chef.roles_path = "roles"
     chef.add_role "postgresql"
+		chef.add_recipe "mongodb"
   end
 
 
