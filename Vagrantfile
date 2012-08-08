@@ -17,6 +17,8 @@ Vagrant::Config.run do |config|
   config.vm.forward_port 5432, 5432 # postgresql
   config.vm.forward_port 4000, 4000 # phppgadmin
   config.vm.forward_port 27017, 27017 # mongodb
+  config.vm.forward_port 5672, 5672 # rabbitmq
+  config.vm.forward_port 55672, 55672 # rabbitmq management web ( http://localhost:55672/mgmt )
 
 
   config.vm.provision :chef_solo do |chef|
@@ -24,6 +26,8 @@ Vagrant::Config.run do |config|
     chef.roles_path = "roles"
     chef.add_role "postgresql"
 		chef.add_recipe "mongodb"
+		chef.add_recipe "rabbitmq"
+		chef.add_recipe "rabbitmq-management"
   end
 
 

@@ -2,9 +2,18 @@ SITE
   remote: http://community.opscode.com/api/v1
   specs:
     apt (1.4.2)
+    erlang (1.0.0)
+      yum (>= 0.5.0)
     mongodb (0.11.0)
       apt (>= 0.0.0)
     openssl (1.0.0)
+    rabbitmq (1.4.0)
+      apt (>= 1.1)
+      erlang (>= 0.9)
+      yum (>= 0.5.0)
+    rabbitmq-management (0.0.3)
+      rabbitmq (>= 0.0.0)
+    yum (0.8.0)
 
 GIT
   remote: git://github.com/scottmuc/chef-postgresql.git
@@ -27,4 +36,6 @@ DEPENDENCIES
   mongodb (>= 0)
   phppgadmin (>= 0)
   postgresql (>= 0)
+  rabbitmq (>= 0)
+  rabbitmq-management (>= 0)
 
