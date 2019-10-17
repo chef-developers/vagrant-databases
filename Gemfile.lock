@@ -21,10 +21,10 @@ GEM
       treetop (~> 1.4.9)
       uuidtools
       yajl-ruby (~> 1.1)
-    childprocess (0.3.2)
-      ffi (~> 1.0.6)
+    childprocess (0.3.9)
+      ffi (~> 1.0, >= 1.0.11)
     erubis (2.7.0)
-    ffi (1.0.11)
+    ffi (1.11.1)
     highline (1.6.13)
     i18n (0.6.0)
     ipaddress (0.8.0)
