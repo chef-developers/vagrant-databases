@@ -28,7 +28,7 @@ GEM
     highline (1.6.13)
     i18n (0.6.0)
     ipaddress (0.8.0)
-    json (1.5.4)
+    json (1.5.5)
     librarian (0.0.24)
       archive-tar-minitar (>= 0.5.2)
       chef (>= 0.10)
